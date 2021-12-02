@@ -1,13 +1,15 @@
-// Initialize Swiper
-    var swiper = new Swiper(".mySwiper", {
-        speed: 600,
-        parallax: true,
+'use strict'
+
+// Initialize Swiper 
+      let swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-    });
+      });
