@@ -4,8 +4,8 @@
 
 */
 
-
-/* 1. Swiper*/
+/* 0. GENERALES */
+/* 0.1 Swiper*/
 html, body {
         position: relative;
         height: 100%;
@@ -43,3 +43,41 @@ html, body {
         object-fit: cover;
       }
 
+/* 0.2 Fuentes */
+@font-face {
+  font-family: 'poppins';
+  src: url('/fonts/poppins-regular-webfont.woff2') format('woff2'),
+       url('/fonts/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* 1. HOME */
+/* 1.1 Especialidades */
+.img-especialidad {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 15rem;
+}
+.img-especialidad-1 {
+  background-image: url('/img/especialidad_1.jpg');  
+  height: 30rem;
+  border: 0.5rem solid #ffffff;
+}
+.img-especialidad-2 {
+  border-top: 0.5rem solid #ffffff;
+  border-right: 0.5rem solid #ffffff;
+  border-bottom: 0.5rem solid #ffffff;
+}
+.img-especialidad-3 {
+  background-image: url('/img/especialidad_3.jpg');
+  border-right: 0.5rem solid #ffffff;
+  border-bottom: 0.5rem solid #ffffff;
+}
+.img-especialidad-4 {
+  background-image: url('/img/especialidad_4.jpg');
+  border-right: 0.5rem solid #ffffff;
+  border-bottom: 0.5rem solid #ffffff;
+}
