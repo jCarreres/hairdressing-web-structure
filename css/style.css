@@ -7,6 +7,14 @@
 1. HOME
 1.1 Especialidades
 
+
+
+
+##### INDEX MOBILE #####
+1. HOME - mobile 
+  1.1 Specialties - mobile
+
+
 */
 
 /* 0. GLOBALS */
@@ -52,29 +60,37 @@ html, body {
        url('/fonts/poppins-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
 
+h1, h2, h3, h4, h5, h6, p, span {
+  font-family: 'poppins', Courier, monospace;
 }
 
 /* 1. HOME */
 /* 1.1 Specialties */
+.border-img {
+  border: 0.5rem solid #ffffff;
+}
 .img-speciality {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  border-right: 0.5rem solid #ffffff;
-  border-bottom: 0.5rem solid #ffffff;
   height: 15rem;
+}
+#containerSpecialities2 {
+  border-left: 0.5rem solid #ffffff;
 }
 .img-speciality-1 {
   background-image: url('/img/speciality_1.jpg');  
-  border-top: 0.5rem solid #ffffff;
   height: 30rem;
 }
 .img-speciality-2 {
-  border-top: 0.5rem solid #ffffff
+  background-image: url('/img/speciality_2.jpg');  
+  border-bottom: 0.5rem solid #ffffff;
 }
 .img-speciality-3 {
   background-image: url('/img/speciality_3.jpg');
+  border-right: 0.5rem solid #ffffff
 }
 .img-speciality-4 {
   background-image: url('/img/speciality_4.jpg');
@@ -82,11 +98,22 @@ html, body {
 
 
 
+
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {  }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {  }
+@media (max-width: 767.98px) {  
+  /* 1. HOME - mobile */
+  /* 1.1 Specialties - mobile*/
+  #containerSpecialities2 {
+    border-left: 0rem solid #ffffff;
+  }
+  .img-speciality-2 {
+    border-top: 0.5rem solid #ffffff;
+  }
+
+}
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {  }
