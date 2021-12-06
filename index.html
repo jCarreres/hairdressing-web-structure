@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,58 +12,75 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
+
 <body>
-  
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Enlace 1</a>
-            <a class="nav-link" href="#">Enlace 2</a>
-            <a class="nav-link" href="#">Enlace 3</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Enlace 1</a>
+                        <a class="nav-link" href="#">Enlace 2</a>
+                        <a class="nav-link" href="#">Enlace 3</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <!-- Slider swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/img/slider_1.jpg"></div>
-        <div class="swiper-slide"><img src="/img/slider_2.jpg"></div>
-        <div class="swiper-slide"><img src="/img/slider_3.jpg"></div>
-      </div>
-      <div class="swiper-pagination"></div>
+        <!-- Slider swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/slider_1.jpg"></div>
+                <div class="swiper-slide"><img src="/img/slider_2.jpg"></div>
+                <div class="swiper-slide"><img src="/img/slider_3.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </header>
+
+    <!-- Specialties -->
+    <div class="container-fluid">
+        <h1 class="text-center mt-5 mb-2">Especialistas en:</h1>
+        <div class="row border-img">
+            <div id="containerSpecialities1" class="col-12 col-md-6 img-speciality-1 img-speciality img-fluid">
+                <div class="txt-speciality-1">
+                    <p>Especialidad 1</p>
+                </div>
+            </div>
+            <div id="containerSpecialities2" class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12 img-speciality-2 img-speciality">
+                        <div class="txt-speciality-2">
+                            <p>Especialidad 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-6 img-speciality img-speciality-3 img-fluid">
+                        <div class="txt-speciality-3">
+                            <p>Especialidad 3</p>
+                        </div>
+                    </div>
+                    <div class="col-6 img-speciality-4 img-speciality img-fluid">
+                        <div class="txt-speciality-4">
+                            <p>Especialidad 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-  </header>
-
-  <!-- Specialties -->
-  <div class="container-fluid">
-    <h1 class="text-center mt-5 mb-2">Especialistas en:</h1>
-    <div class="row border-img">
-      <div id="containerSpecialities1" class="col-12 col-md-6 img-speciality-1 img-speciality img-fluid" style="background-color: blue"></div>
-      <div id="containerSpecialities2" class="col-12 col-md-6">
-        <div class="row">
-          <div class="col-12 img-speciality-2 img-speciality" style="background-color: orange;"></div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-6 img-speciality-3 img-speciality img-fluid"></div>
-          <div class="col-6 img-speciality-4 img-speciality img-fluid"></div>
-        </div>
-      </div>
-    </div>
-  </div>  
 
 
 
@@ -83,5 +101,6 @@
     <!-- My JS -->
     <script src="js/script.js"></script>
 
-  </body>
-  </html>
+</body>
+
+</html>
