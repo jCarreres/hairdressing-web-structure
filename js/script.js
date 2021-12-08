@@ -1,6 +1,18 @@
 'use strict'
 
-// Initialize Swiper 
+/*
+##### INDEX #####
+1.0 Initialize Swipper
+2.0 Specialities
+    2.1 Speciality 1
+    2.2 Speciality 1
+    2.3 Speciality 1
+    2.4 Speciality 1
+*/
+
+
+
+// 1.0 Initialize Swiper 
 let swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -16,8 +28,8 @@ let swiper = new Swiper(".mySwiper", {
 
 
 
-/* Specialities */
-// Speciality 1
+/* 2.0 Specialities */
+// 2.1 Speciality 1
 let txtSpeciality1 = document.querySelector(".txt-speciality-1");
 let getImgSpeciality1 = document.querySelector(".img-speciality-1");
 
@@ -41,7 +53,7 @@ function reverseTransparencyEffectSpeciality1() {
     }
 }
 
-// Speciality 2
+// 2.2 Speciality 2
 let txtSpeciality2 = document.querySelector(".txt-speciality-2");
 let getImgSpeciality2 = document.querySelector(".img-speciality-2");
 
@@ -65,7 +77,7 @@ function reverseTransparencyEffectSpeciality2() {
     }
 }
 
-// Speciality 3
+// 2.3 Speciality 3
 let txtSpeciality3 = document.querySelector(".txt-speciality-3");
 let getImgSpeciality3 = document.querySelector(".img-speciality-3");
 
@@ -89,7 +101,7 @@ function reverseTransparencyEffectSpecialitySpeciality3() {
     }
 }
 
-// Speciality 4
+// 2.4 Speciality 4
 let txtSpeciality4 = document.querySelector(".txt-speciality-4");
 let getImgSpeciality4 = document.querySelector(".img-speciality-4");
 
@@ -111,4 +123,28 @@ function reverseTransparencyEffectSpecialitySpeciality4() {
     if (mediaqueryMediumDevice.matches) {
         txtSpeciality4.style.setProperty("height", "0%");
     }
+}
+
+// Btn-query
+let getBtnWhatsapp = document.querySelector("#btn-whatsapp");
+
+getBtnWhatsapp.addEventListener("mouseover", hoverBtnWhatsapp);
+
+function hoverBtnWhatsapp() {
+    let getTxtBtnWhatsapp = document.querySelector("#btn-whatsapp p");
+    let getImgBtnWhatsapp = document.querySelector("#btn-whatsapp img");
+
+    getTxtBtnWhatsapp.style.setProperty("color", "var(--color-white)");
+    getImgBtnWhatsapp.setAttribute("src", "/img/whatsapp-white.png");
+}
+
+getBtnWhatsapp.addEventListener("mouseout", reverseHoverBtnWhatsapp);
+
+function reverseHoverBtnWhatsapp() {
+
+    let getTxtBtnWhatsapp = document.querySelector("#btn-whatsapp p");
+    let getImgBtnWhatsapp = document.querySelector("#btn-whatsapp img");
+
+    getTxtBtnWhatsapp.style.setProperty("color", "var(--color-a)");
+    getImgBtnWhatsapp.setAttribute("src", "/img/whatsapp.png");
 }

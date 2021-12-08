@@ -6,7 +6,8 @@
 
 1. HOME
   1.1 Especialidades
-  1.2 Query
+  1.2 Methodology
+  1.3 Query
 
 
 
@@ -180,25 +181,54 @@ span {
 }
 
 
-/* 1.2 Query */
+/* 1.2 Methodology */
+
+.img-methodology {
+    align-self: center;
+    background-color: rgba(225, 142, 204, 0.2);
+    border-radius: 4rem;
+    padding: 1rem;
+    width: 7rem;
+}
+
+.card-methodology {
+    border: none;
+    width: 100%!important;
+}
+
+.card-title-methodology {
+    color: var(--color-a);
+}
+
+.subtitle-methodology {
+    color: var(--color-a);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+/* 1.3 Query */
 
 .query {
     background-color: rgba(225, 142, 204, 0.2);
-    padding: 9rem 9rem;
+    padding: 7rem 7rem;
 }
 
 .query p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2.2rem;
+    margin: 0px;
 }
 
 .btn-query {
+    align-items: center;
     border-style: solid;
     border-color: var(--color-a);
     border-width: 0.15rem;
     border-radius: 1rem 1rem 0rem 1rem;
     color: var(--color-a);
-    font-size: 1.2rem;
     padding: 0.6rem 2rem;
 }
 
@@ -206,6 +236,31 @@ span {
     background-color: var(--color-a);
     color: var(--color-white);
     text-decoration: none;
+}
+
+.container-btn-contact {
+    justify-content: space-between;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.logo-whatsapp {
+    width: 3rem;
+}
+
+.btn-whatsapp {
+    align-items: center;
+}
+
+.btn-whatsapp p {
+    color: var(--color-a);
+    font-size: 1.2rem;
+    margin: 0px;
+    margin-right: 0.5rem;
+}
+
+.btn-whatsapp p:hover {
+    background-color: var(--color-a);
 }
 
 
@@ -218,7 +273,29 @@ span {
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    /* 1.2 Methodology - mobile*/
+    .subtitle-methodology {
+        font-size: 0.8rem;
+    }
+    .title-methodology {
+        font-size: 1.7rem;
+    }
+    /* 1.3 Query - mobile */
+    .query {
+        padding: 4rem 1rem!important;
+    }
+    .query p {
+        text-align: justify;
+        margin: 1rem 0rem;
+    }
+    .query h2 {
+        text-align: center;
+    }
+    .btn-query {
+        padding: 0rem 0rem!important;
+    }
+}
 
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -237,9 +314,13 @@ span {
 /* `lg` applies to medium devices (tablets, less than 992px) */
 
 @media (max-width: 991.98px) {
-    /* 1.2 Query - mobile */
+    /* 1.3 Query - mobile */
     .query {
-        padding: 6rem 3rem;
+        padding: 9rem 3rem;
+    }
+    .query p {
+        font-size: 1.1rem;
+        line-height: 2rem;
     }
 }
 
@@ -247,6 +328,24 @@ span {
 /* `xl` applies to large devices (desktops, less than 1200px) */
 
 @media (max-width: 1199.98px) {}
+
+@media (max-width: 1299.98px) {
+    /* 1.3 Query - mobile */
+    .btn-query {
+        width: 100%;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+    }
+    .query p {
+        font-size: 1rem;
+    }
+    .btn-whatsapp {
+        margin-top: 1rem;
+    }
+    .btn-whatsapp p {
+        margin-right: 0.5rem;
+    }
+}
 
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
