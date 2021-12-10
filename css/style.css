@@ -264,10 +264,53 @@ span {
 }
 
 
-/* Google Reviews*/
+/* 1.4 Google Reviews*/
 
 .google-reviews {
     margin-top: 5rem;
+}
+
+
+/* 2. FOOTER */
+
+footer {
+    color: var(--color-white);
+    background-color: var(--color-a);
+    padding: 5rem 7rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+footer ul:nth-child(1) {
+    color: var(--color-white)!important;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+footer ul:nth-child(1) li a {
+    color: var(--color-white);
+}
+
+footer h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+footer ul:nth-child(1) li {
+    border-bottom: 0.1rem solid white;
 }
 
 
