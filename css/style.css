@@ -3,6 +3,8 @@
 0. GLOBALS
   0.1 Swiper
   0.2 Fonts
+  0.3 Colors
+  0.4 Links
 
 1. HOME
   1.1 Especialidades
@@ -83,7 +85,7 @@ span {
 }
 
 
-/* Colors */
+/* 0.3 Colors */
 
 :root {
     --color-a: #5C1E4C;
@@ -94,6 +96,10 @@ span {
     --color-white: #FFFFFF;
 }
 
+/* 0.4 Links */
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
 
 /* 1. HOME */
 
@@ -311,6 +317,10 @@ footer ul li {
 
 footer ul:nth-child(1) li {
     border-bottom: 0.1rem solid white;
+}
+
+footer img.logo-rrss {
+    width: 1.8rem;
 }
 
 

@@ -5,9 +5,9 @@
 1.0 Initialize Swipper
 2.0 Specialities
     2.1 Speciality 1
-    2.2 Speciality 1
-    2.3 Speciality 1
-    2.4 Speciality 1
+    2.2 Speciality 2
+    2.3 Speciality 3
+    2.4 Speciality 4
 */
 
 
