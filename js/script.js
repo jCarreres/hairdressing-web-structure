@@ -8,6 +8,8 @@
     2.2 Speciality 2
     2.3 Speciality 3
     2.4 Speciality 4
+3.0 Reviews
+
 */
 
 
@@ -19,11 +21,7 @@ let swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+    }
 });
 
 
@@ -147,4 +145,12 @@ function reverseHoverBtnWhatsapp() {
 
     getTxtBtnWhatsapp.style.setProperty("color", "var(--color-a)");
     getImgBtnWhatsapp.setAttribute("src", "/img/whatsapp.png");
+}
+
+// 3.0 Reviews
+const myTimeout = setTimeout(btnElfsight, 1500);
+
+function btnElfsight() {
+    let container = document.querySelector('a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=127.0.0.1:5500&utm_campaign=free-widget"]');
+    container.style.cssText = 'display: none;';
 }
